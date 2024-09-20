@@ -1,0 +1,16 @@
+.get-detail{
+    /* height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/IMG_5407.jpg);
+    margin-bottom: 2rem;
+    overflow: hidden; */
+}
+.get-detail::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(1px);
+    background: linear-gradient(0deg, #1A1A1A 0%, transparent);
+}

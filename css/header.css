@@ -1,0 +1,202 @@
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    /* background: var(--sg-bgblack-art); */
+    /* backdrop-filter: blur(10px); */
+    z-index: 1000000;
+    background: linear-gradient(
+        180deg,
+        #1A1A1A 0%,
+        transparent
+    );
+}
+.web-header{
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 70px;
+}
+.web-header h1{
+    font-size: 1.1rem;
+    font-weight: 500;
+    /* font-family: "El Messiri", sans-serif; */
+    font-family: var(--sg-fontLogo);
+    color: var(--sg-bglight);
+    /* color: var(--sg-bgblack-art); */
+}
+.web-header .web-logo i{
+    margin-right: 0.5rem;
+    color: var(--sg-bglight);
+    display: none;
+}
+@media only screen and (max-width: 1250px) {
+    .web-header ul{
+        margin: 0 0.5rem;
+    }
+}
+.web-header ul:last-child a:not(a.main-btn){
+    color: var(--sg-border-mainApp);
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1rem;
+    padding: 0rem 0.2rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    
+    /* color: var(--sg-bgblack-art); */
+    /* border-bottom: 1px solid var(--sg-border-00); */
+}
+.web-header ul:last-child a span{
+    font-family: var(--sg-fontbrand);
+}
+.web-header ul:last-child a.active span{
+    /* color: var(--sg-maincolor-bluelight); */
+    color: var(--sg-bglight);
+}
+.web-header ul:last-child a.main-btn{
+    margin-left: 0.5rem;
+    padding: 0rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 0;
+    border-radius: 50rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    /* background: var(--sg-bgblack-art); */
+    background: var(--sg-main-gradienColorHover);
+}
+.web-header ul:last-child a.main-btn i{
+    font-size: 0.9rem;
+}
+/* ---------------------------------this is form for user   */
+.form-head,.form-head > .bg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);    
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    transition: all ease-in-out 0.2s;
+    opacity: 0;
+}
+.form-head,.form-head > .bg{
+    transition: none;
+}
+.form-head-active,
+.form-head-active .bg{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);    
+}
+.form-head-active .bg{
+    background: black;
+    opacity: 0.4;
+}
+body:has(.form-head-active){
+    overflow: hidden;
+    overflow-y: hidden;
+}
+.form-head .form-body{
+    width: 95%;
+    height: auto;
+    max-width: 500px;
+    max-height: 100vh;
+    position: relative;
+    z-index: 1000000;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 16px;
+    color: var(--sg-bglight);
+    background: var(--sg-mainblack);
+}
+.form-head .form-body::-webkit-scrollbar{
+    display: none;
+}
+.form-head .head{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.form-head .head ul{
+    height: 60px;
+    margin: 0 1rem;
+}
+.form-head .head h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--sg-fontbrand);
+}
+.form-head .head .icon:hover{
+    cursor: pointer;
+    background: var(--sg-bgblack-art);
+}
+.form-head .form-body .form-con ul{
+    /* margin: 0 1rem; */
+    padding-bottom: 1rem;
+}
+.form-head .form-body .form-con ul a{
+    color: var(--sg-bglight);
+}
+.form-head .form-body .form-con ul a:hover,
+.form-head .form-body .form-con ul .active{
+    background: var(--sg-bgblack-art);
+}
+.form-head .form-body .form-con ul a i,
+.form-head .form-body .form-con ul a strong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: 0 1rem;
+
+}
+.form-head .form-body .form-con ul a strong{
+    font-family: var(--sg-fontbrand);
+    font-size: 1.1rem;
+}
+@media only screen and (max-width: 420px) {
+    /* .main-header{
+        background: linear-gradient(180deg, #1A1A1A 10%, transparent);
+    } */
+    .main-header .web-header{
+        height: 70px;
+    }
+    .web-header ul:last-child{
+        margin:  0 0.7rem;
+    }
+    .web-header h1{
+        font-size: 1.8rem;
+    }
+    .web-header .web-logo i{
+        display: block;
+        font-size: 2rem;
+    }
+    .web-header ul:last-child a:not(a.main-btn){
+        display: none;
+    }
+    .main-header .web-header ul:last-child a{
+        width: 2.3rem;
+        height: 2.3rem;
+        padding: 0rem;
+        background: var(--sg-bgblack-art);
+        font-family: "Font Awesome 6 Free";
+    }
+    .main-header .web-header ul:last-child a::before{
+        content: "\f141";
+        font-size: 1.5rem;
+    }
+    .main-header .web-header ul:last-child a li{
+        display: none;
+    }
+}

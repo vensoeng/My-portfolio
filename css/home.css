@@ -1,0 +1,844 @@
+
+.default-content-header{
+    width: max-content;
+    position: relative;
+    margin: 1.5rem auto;
+}
+.default-content-header h2{
+    font-weight: 550;
+    font-size: 4vw;
+    letter-spacing: 2px;
+    color: var(--sg-bglight);
+    font-family: var(--sg-fontbrand);
+}
+.default-content-header .main-btn{
+    margin-top: 2rem;
+}
+.default-content-header .btn,.default-footer .con .btn{
+    padding: 0rem 1rem;
+    width: max-content;
+    height: 3rem;
+    position: relative;
+    overflow: hidden;
+    color: var(--sg-bglight);
+    border: 1.555555px solid rgb(255, 145, 66);
+}
+.default-content-header .btn span,.default-footer .con span{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: var(--sg-fontbrand);
+}
+.default-content-header .btn i,.default-footer .con i{
+    margin-left: 0.6rem;
+}
+
+.default-content-header .con::before,
+.web-show-body .text::before,
+.web-me-body > .box .row:first-child::before,
+.my-story-body::before{
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 500000000000rem;
+    background: var(--sg-bglight);
+    filter: blur(100px);
+    opacity: 0.6;
+}
+.default-content-header .con::before{
+    width: 5rem;
+    height: 5rem;
+    filter: blur(80px);
+    opacity: 0.7;
+}
+.default-footer{
+    position: relative;
+    z-index: 200;
+}
+.default-footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(
+        0deg,
+        #1A1A1A 50%,
+        transparent
+    );
+}
+.default-footer .con{
+    position: relative;
+    z-index: 1;
+    padding-top: 2rem;
+}
+/* -----------------------this is intro in home page  */
+.web-show{
+    margin: 0 auto;
+    display: block;
+}
+.web-show-body{
+    max-width: 1250px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.web-show-body .user-profile{
+    display: none;
+}
+.web-show-body .text {
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+.web-show-body .text h2{
+    font-size: 5.3rem;
+    color: var(--sg-bglight);
+    font-family: var(--sg-fontbrand);
+}
+.web-show .main-btn {
+    margin-top: 2rem;
+}
+.web-show .main-btn .btn{
+    padding: 0rem;
+    width: 10.5rem;
+    height: 3rem;
+    position: relative;
+    overflow: hidden;
+    color: var(--sg-bglight);
+    background: rgb(255,145,66);
+}
+.web-show .main-btn .btn span,
+.web-show .main-btn .btn i{
+    position: relative;
+    z-index: 2;
+}
+.web-show .main-btn .btn span{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: var(--sg-fontbrand);
+}
+.web-show .main-btn .btn i{
+    margin-left: 0.6rem;
+}
+/* .web-show .main-btn .btn::before{
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 10.4rem;
+    height: 2.9rem;
+    border-radius: 50rem;
+    background: var(--sg-bgblack-art);
+} */
+/* ----------------------this is me-------------------------   */
+.web-me-body{
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.web-me-body > .box{
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    position: relative;
+}
+.web-me-body > .box .row:first-child{
+    max-width: 500px;
+}
+.web-me-body > .box .row:first-child::before{
+    width: 10rem;
+    height: 10rem;
+    right: auto;
+    left: 8rem;
+    top: 0rem;
+    opacity: 0.2;
+    filter: blur(60px);
+}
+.web-me-body > .box .row h2{
+    font-weight: 550;
+    font-size: 3.4rem;
+    letter-spacing: 2px;
+    color: var(--sg-bglight);
+    font-family: var(--sg-fontbrand);
+}
+.web-me-body > .box .row blockquote{
+    margin: 1.5rem auto;
+}
+.web-me-body > .box .row blockquote p{
+    color: var(--sg-border-mainApp);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.web-me-body > .box .row .btn{
+    padding: 0rem;
+    width: 13.5rem;
+    height: 3rem;
+    position: relative;
+    overflow: hidden;
+    color: var(--sg-bglight);
+    background: rgb(255, 145, 66);
+}
+.web-me-body > .box .row:last-child{
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 340px;
+    min-height: 440px;
+    margin-left: 2rem;
+}
+.web-me-body > .box .row:last-child .con{
+    height: 100%;
+}
+/* -----------------my story--------------------> */
+
+.my-story-body{
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 6.5rem;
+    position: relative;
+}
+.my-story-body::before{
+    width: 20rem;
+    height: 20rem;
+    background: var(--sg-main-color-yellow);
+}
+.my-story-body .box{
+    max-width: 872px;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    position: relative;
+    z-index: 10;
+}
+.my-story-body .box ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+.my-story-body .box ul li{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.my-story-body .box ul li .image{
+    overflow: hidden;
+    border-radius: 16px;
+    height: 500px;
+}
+.my-story-body .box ul li .image::after{
+    width: 20rem;
+    height: 20rem;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    border-radius: 1000000000000000000rem;
+    background: var(--sg-bglight);
+    opacity: 0;
+    transition: all ease-in 0.2s;
+    z-index: 3;
+}
+.my-story-body .box ul li .image:active::after{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(10);
+}
+.my-story-body .box ul li > .text,
+.web-contact-body .content{
+    margin-top: 0.8rem;
+}
+.web-contact-body .content{
+    display: none;
+}
+.my-story-body .box li > .text .title,
+.web-contact-body .content .text .title{
+    display: flex;
+    align-items: center;
+}
+.my-story-body .box ul li .text h2,
+.web-contact-body .content h2{
+    position: relative;
+    font-family: var(--sg-fontKous);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--sg-main-color-yellow);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.my-story-body .box ul li > .text span,
+.web-contact-body .content > .text span{
+    display: block;
+    width: 3rem;
+    min-width: 1rem;
+    height: 0.2rem;
+    margin-left: 1rem;
+    background: var(--sg-bglight);
+    margin-top: -8px;
+}
+
+.my-story-body .box ul li .list,
+.web-contact-body .content > .detail .list{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem auto;
+}
+
+.my-story-body .box ul li .list strong,
+.web-contact-body .content > .detail strong{
+    width: 80px;
+    font-weight: 500;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-border-mainApp);
+    opacity: 0.9;
+}
+.my-story-body .box ul li .list a,
+.web-contact-body .content > .detail .list a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 1.8rem;
+    padding: 0rem 0.5rem;
+    border-radius: 50rem;
+    font-size: 1rem;
+    color: var(--sg-bglight);
+}
+.my-story-body .box ul li .list a p::first-letter{
+    text-transform: uppercase;
+}
+.my-story-body .box ul li .detail .list:last-child a:hover,
+.web-contact-body .content > .detail .list:last-child a:hover{
+    background: var(--sg-bgblack-art);
+}
+
+/* this is feedback from use --------------------------------------------------- */
+.web-feedback{
+    height: max-content;
+}
+.web-feedback-body{
+    max-width: 872px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 8.5rem;
+    position: relative;
+}
+.web-feedback-body .default-content-header{
+    justify-content: left;
+    width: initial;
+}
+.web-feedback-body .default-content-header .con::before{
+    width: 10rem;
+    height: 10rem;
+    right: auto;
+    left: -3rem;
+    top: -1rem;
+    opacity: 0.2;
+    filter: blur(60px);
+}
+.web-feedback-body  .box ul{
+    display: block;
+    margin: 0 auto;
+    column-gap: 0.5rem;
+    column-count: 2;
+    max-width: 100%;
+    grid-template-columns: initial;
+}
+.web-feedback-body  .box ul li{
+    position: relative;
+    margin-bottom: 0.5rem;
+    background: transparent;
+    break-inside: avoid;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+    border-radius: 16px;
+    background: var( --sg-bgblack-art);
+}
+.web-feedback-body li .header{
+    margin: 0.5rem;
+}
+.web-feedback-body li .user-profile h2{
+    font-size: 0.9rem;
+    color: var(--sg-bglight);
+    font-family: var(--sg-fontRoboto);
+    margin-left: 0.5rem;
+}.web-feedback-body li .user-profile h2:hover{
+    text-decoration: underline;
+}
+.web-feedback-body li .header .account a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--sg-main-color-yellow);
+    font-family: var(--sg-fontbrand);
+    background: var(--sg-mainblack);
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+}
+.web-feedback-body li blockquote{
+    padding: 0.5rem;
+    color: var(--sg-bglight);
+}
+/* -------------------------this is my Contact -------------------------->>  */
+.web-contact{
+    display: block;
+    margin-top: 6.5rem;
+    padding: 3rem 0rem;
+    background: var(--sg-color-def);
+}
+.web-contact-body{
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.web-contact-body .box{
+    margin: 0 auto;
+    max-width: 424px;
+    height: 537px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+.web-contact-body .box .image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.web-contact-body .box ul{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 3;
+    background: linear-gradient(0deg, #0e0705b8 30%, transparent);
+}
+.web-contact-body .box ul li{
+    margin: 0 0.5rem;
+}
+.web-contact-body .box ul li i{
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: var(--sg-bglight);
+}
+.web-contact-body .box ul li span{
+    font-size: 1rem;
+    color: var(--sg-bglight);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.web-contact-body .box::before{
+    display: none;
+}
+/* -------------------------------------------------this is ---------------  */
+.web-contact-body .box ul {
+    justify-content: center;
+    height: 90px;
+}
+.web-contact-body .box ul::before{
+    order: 2;
+    content: 'វិនសឹង្ហ';
+    font-size: 1.1rem;
+    font-weight: 800;
+    font-family: var(--sg-fontKous);
+    color: var(--sg-bglight);
+    border-left: 2px solid var(--sg-bglight);
+    padding-left: 0.5rem;
+    color: var(--sg-main-color-yellow);
+}
+.web-contact-body .box ul::after{
+    content: '-VenSong';
+    order: 3;
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-main-color-yellow);
+}
+.web-contact-body .box ul li span {
+    display: none;
+}
+.web-contact-body .box ul li i {
+    font-size: 1.3rem;
+}
+.web-contact-body .box ul li {
+    margin: 0 0rem;
+}
+/* -------------------------------------------------dd------------------------  */
+@media only screen and (max-width: 1250px) 
+{
+    .web-me-body{
+        margin: 0 0.5rem;
+    }
+}
+@media only screen and (max-width: 950px) 
+{
+    .web-show-body .text h2{
+        font-size: 8vw;
+    }
+}
+@media only screen and (max-width: 872px) {
+    .default-content-header h2{
+        font-size: 3rem;
+    }
+    /* -------------------------  */
+    .web-me-body > .box{
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .web-me-body > .box .row:first-child{
+        max-width: 100%;
+    }
+    .web-me-body > .box .row h2{
+        font-size: 3rem;
+    }
+    .web-me-body > .box .row:last-child{
+        margin-top: 2rem;
+        margin-left: 0rem;
+        max-width: 100%;
+        display: none;
+    }
+    /* ----------------------------add mirgin-------------  */
+    .my-story-body .box,
+    .web-feedback-body{
+        margin: 0 0.5rem;
+    }
+    /* -----------------this Is fix row-------------------  */
+    .web-main{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 3rem;
+    }
+    .web-contact{
+        margin-top: 0rem;
+        background: none;
+    }
+    .web-contact .default-content-header{
+        display: none;
+    }
+    .web-contact-body{
+        max-width: 600px;
+    }
+    .web-contact-body .box{
+        max-width: 100%;
+    }
+    .my-story{
+        order: 4;
+    }
+    .web-feedback{
+        order: 5;
+    }
+}
+@media only screen and (max-width: 600px){
+    .web-contact-body{
+        margin: 0 0.5rem;
+    }
+    .web-me-body > .box .row h2{
+        font-size: 10vw;
+    }
+} 
+@media only screen and (max-width: 510px) 
+{
+    .web-show{
+        display: none;
+    }
+    .web-me{
+        margin-top: 80px;
+    }
+    .web-show-body{
+        min-height: 90vh;
+    }
+    .default-content-header{
+        max-width: 100%;
+    }
+    .default-content-header h2{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .web-show-body .user-profile{
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+    .web-me-body > .box .row h2 br{
+        display: inline;
+        content: '';
+    }
+    .web-me{
+        order: 2;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+    .web-contact{
+        margin-top: 80px;
+        margin-bottom: 2rem;
+        padding: 0rem;
+    }
+    .web-me-body > .box .row h2{
+        font-size: 13vw;
+        letter-spacing: -1px;
+    }
+    /* .web-contact-body{
+        margin: 0 auto;
+    }
+    .web-contact-body .box{
+        min-height: 600px;
+        border-radius: 0px 0px 20px 20px;
+    } */
+    .web-contact-body .box{
+        overflow: initial;
+    }
+}
+@media only screen and (max-width: 600px){
+    .my-story-body{
+        display: flex;
+        flex-flow: column;
+        margin-top: 0rem;
+    }
+    .my-story-body .default-content-header{
+        order: 1;
+    }
+    .my-story-body .default-content-header h2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 639px){
+    .my-story-body .box ul li{
+        position: relative;
+        overflow: initial;
+    }
+    .my-story-body .box ul li .image img{
+        position: relative;
+        z-index: 3;
+    }
+    .web-contact-body .box .image{
+        overflow: hidden;
+        border-radius: 16px;
+    }
+    .my-story-body .box ul li .image::before,
+    .web-contact .web-contact-body .box::after{
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        filter: blur(100px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: var(--bg-img);
+    }
+    .my-story-body .box ul li > .text,
+    .my-story-body .box ul li > .detail{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 450px)
+{
+    .web-contact-body .box ul{
+        justify-content: center;
+        height: 90px;
+    }
+    .web-contact-body .box ul li{
+        margin: 0 0rem;
+    }
+    .web-contact-body .box ul li span{
+        display: none;
+    }
+    .web-contact-body .box ul li i{
+        font-size: 1.3rem;
+    }
+    .web-contact-body .box ul::before{
+        order: 2;
+        content: 'វិនសឹង្ហ';
+        font-size: 1.1rem;
+        font-weight: 800;
+        font-family: var(--sg-fontKous);
+        color: var(--sg-bglight);
+        border-left: 2px solid var(--sg-bglight);
+        padding-left: 0.5rem;
+        color: var(--sg-main-color-yellow);
+    }
+    .web-contact-body .box ul::after{
+        content: '-VenSong';
+        order: 3;
+        font-weight: 800;
+        font-size: 1.1rem;
+        font-family: var(--sg-fontbrand);
+        color: var(--sg-main-color-yellow);
+    }
+    .web-contact-body .content{
+        display: block;
+    }
+    .web-contact-body .box .image img:first-child{
+        display: none;
+    }
+    .web-contact-body .box .image .dn{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .web-contact .web-contact-body .box::after{
+        filter: blur(50);
+        background-size: contain;
+        background-position: center;
+    }
+    /* .web-contact-body .box::before{
+        background-image: url('../images/soeng_bg.png');
+    }
+    .web-contact-body .box .image::before,.web-contact-body .box .image::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        scale: 1;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/soeng_bg.png');
+    }
+    .web-contact-body .box .image::after{
+        top: 0;
+        background: var(--sg-mainblack);
+        background-image: none;
+        opacity: 0.4;
+    } */
+    .web-me{
+        /* display: none; */
+        order: 0;
+        margin-bottom: 0rem;
+        margin-top: 100px;
+    }
+} 
+@media only screen and (max-width: 420px){
+    .web-feedback{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is web slider  */
+.web-slider-body,.mystory-body{
+    margin: 0 auto;
+    max-width: 1250px;
+}
+.web-slider-body .swiper{
+    overflow: initial;
+}
+.web-slider-body .swiper .swiper-slide{
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.web-slider-body .swiper .swiper-pagination-bullet {
+    width: 3rem;
+    height: 0.2rem;
+    opacity: 1;
+    border-radius: 1px;
+    margin-top: 2rem;
+    background: var(--sg-border-mainApp);
+}
+.web-slider-body .swiper .swiper-pagination-bullet-active {
+    background: var(--sg-bgblack-art);
+}
+.web-slider-body .swiper-horizontal>.swiper-pagination-bullets,
+.web-slider-body .swiper-pagination-bullets.swiper-pagination-horizontal,
+.web-slider-body .swiper-pagination-custom,
+.web-slider-body .swiper-pagination-fraction{
+    bottom: -1rem;
+}
+
+.web-slider-body .swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 1250px) {
+    .web-slider-body,.mystory-body{
+        display: block;
+        margin: 0 0.5rem;
+        margin-top: 1.8rem;
+    }
+    
+}
+/* this is my story  */
+.mystory-body{
+    margin: 0.8rem auto;
+    margin-top: 1.8rem;
+}
+.mystory-body ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+}
+.mystory-body ul li{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+.mystory-body ul li .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
